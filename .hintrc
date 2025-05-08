@@ -1,0 +1,17 @@
+{
+  "extends": [
+    "development"
+  ],
+  "hints": {
+    "axe/forms": [
+      "default",
+      {
+        "label": "off"
+      }
+    ],
+    "button-type": "off",
+    "compat-api/html": "off",
+    "no-inline-styles": "off",
+    "axe/text-alternatives": "off"
+  }
+}

@@ -1,96 +1,109 @@
-.voluptatem {
-  background-image: url(../../../../public/images/restau/about-bg.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  padding: 20px;
-  height: 70vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 80px;
-}
-.left > p{
-    color: rgba(255, 255, 255, 0.679);
-}
-.left > span{
-    color: gray;
 
-}
-.left > p > svg{
-    color: #cda45e;
-}
-.right{
-border: solid gray 5px;
-}
-.left{
-    color: white;
-width: 50%;
-padding-inline: 20px;
-}
-.why {
-    padding: 10vh;
+// menu-part
+
+  .menu{
     display: flex;
     flex-direction: column;
-    gap: 7vh;
-    background-color: rgba(0, 0, 0, 0.9529411765);
-  }
-  .why .frst {
+    gap: 3vw;
+    padding: 4vh 4vw;
+    background: #191815;
+}
+.menu h2{
+  color: grey;
+}
+.menu h2 span{
+  color: #CDA45E;
+}
+.menu p{
+  color: #CDA45E;
+}
+.links{
     display: flex;
-    flex-direction: column;
-    gap: 1vh;
-  }
-  .why .frst p {
-    display: flex;
-    gap: 2vh;
     align-items: center;
-    color: grey;
-    font-size: 3vh;
-  }
-  .why .frst p span {
-    color: #cda45e;
-    padding-bottom: 2vh;
-  }
-  .why .frst h2 {
-    color: #CDA45E;
-    font-size: 5vh;
-  }
-  
-  .children {
+    justify-content: center;
+    gap: 2vw;
+}
+.links > button{
+    color: #fff;
+    background: none;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+.links button:hover{
+  color: #cda45e;
+}
+.links > button:focus{
+    color: gray;
+}
+
+.lista{
     display: flex;
-    gap: 5vh;
-  }
-  .children div {
-    background-color: #191815;
-    padding: 4vh;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1vw;
+    // padding-inline: 10vw;
+    justify-content: center;
+    min-height: 30vh;
+}
+.plats{
+    display: flex;
+    width: calc((100% / 2) - 1vw);
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.plats> img{
+    width: 4vw;
+    border-radius: 50%;
+    border: 5px solid #ffffff48;
+}
+
+.plats > div{
     display: flex;
     flex-direction: column;
-    gap: 3vh;
-    height: 30vh;
-    transition: 0.7s;
-  }
-  .children div span {
-    color: #cda45e;
-    font-size: 4vh;
-  }
-  .children div h3 {
-    color: white;
-    font-size: 3vh;
-  }
-  .children div p {
-    font-size: 2.3vh;
+    width: 85%;
+}
+
+.info-plat{
+    display: flex;
     width: 100%;
-    color: grey;
-  }
-  .children div:hover {
-    transition: 0.7s;
-    background-color: #CDA45E;
-  }
-  .children div:hover span {
-    color: black;
-  }
-  .children div:hover h3, .children div:hover p {
-    color: black;
-  }
- 
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.info-plat > h4{
+    color: #fff;
+    background-color: black;
+    padding-right: 10px;
+    z-index: 3;
+}
+
+.info-plat > span{
+    color: gray;
+    padding: 0 10px;
+    font-weight: 600;
+    background-color: black;
+    z-index: 3;
+}
+
+.info-plat::after{
+    content:  ".....................................................................................................................................................................................";
+    position: absolute;
+    left: 20px;
+    right: 0;
+    top: -4px;
+    z-index: 1;
+    color: #5c5e57;
+}
+
+.plats > div > p{
+    font-style: italic;
+    font-size: 14px;
+    color: #5c5e57;
+}
+
+
 
