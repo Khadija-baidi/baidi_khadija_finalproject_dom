@@ -110,5 +110,28 @@ specialtyBtn.addEventListener('click', () => {
   })
 })
 
+// reservation
 
+document.getElementById('reservation-form').addEventListener('submit', function (e) {
+  e.preventDefault();
 
+  const fields = [
+    'name',
+    'email',
+    'phone',
+    'date',
+    'time',
+    'people'
+  ];
+
+  const isEmpty = fields.some(id => {
+    const el = document.getElementById(id);
+    return !el.value.trim();
+  });
+
+  if (isEmpty) {
+    alert('Please complete all required fields before booking.');
+  } else {
+    alert('Table booked successfully!');
+  }
+});
