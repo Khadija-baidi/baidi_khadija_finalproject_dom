@@ -1,3 +1,70 @@
+// why-us
+.why {
+  padding: 10vh;
+  display: flex;
+  flex-direction: column;
+  gap: 7vh;
+  background-color: rgba(0, 0, 0, 0.9529411765);
+}
+.why .frst {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
+.why .frst p {
+  display: flex;
+  gap: 2vh;
+  align-items: center;
+  color: grey;
+  font-size: 3vh;
+}
+.why .frst p span {
+  color: #cda45e;
+  padding-bottom: 2vh;
+}
+.why .frst h2 {
+  color: #CDA45E;
+  font-size: 5vh;
+}
+
+.children {
+  display: flex;
+  gap: 5vh;
+}
+.children div {
+  background-color: #191815;
+  padding: 4vh;
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+  height: 30vh;
+  transition: 0.7s;
+}
+.children div span {
+  color: #cda45e;
+  font-size: 4vh;
+}
+.children div h3 {
+  color: white;
+  font-size: 3vh;
+}
+.children div p {
+  font-size: 2.3vh;
+  width: 100%;
+  color: grey;
+}
+.children div:hover {
+  transition: 0.7s;
+  background-color: #CDA45E;
+}
+.children div:hover span {
+  color: black;
+}
+.children div:hover h3, .children div:hover p {
+  color: black;
+}
+
+
 // specials-part
 .specials {
   height: 100vh;
