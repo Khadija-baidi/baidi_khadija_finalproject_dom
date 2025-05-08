@@ -135,3 +135,8 @@ document.getElementById('reservation-form').addEventListener('submit', function 
     alert('Table booked successfully!');
   }
 });
+
+
+
+
+// contact 
