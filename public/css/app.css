@@ -1,4 +1,45 @@
 @charset "UTF-8";
+.voluptatem {
+  background-image: url(../../../../public/images/restau/about-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px;
+}
+
+.left > p {
+  color: rgba(255, 255, 255, 0.679);
+}
+
+.left > span {
+  color: gray;
+}
+
+.left > p > svg {
+  color: #cda45e;
+}
+
+.right {
+  border: solid gray 5px;
+}
+
+.right img:hover {
+  transform: scale(1.1);
+  opacity: 1;
+  border: solid grey 4px;
+}
+
+.left {
+  color: white;
+  width: 50%;
+  padding-inline: 20px;
+}
+
 .why {
   padding: 10vh;
   display: flex;
