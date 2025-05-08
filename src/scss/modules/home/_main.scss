@@ -1,3 +1,90 @@
+// specials-part
+.specials {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 5vh;
+  gap: 5vh;
+  background-color: #0c0b09;
+  color: white;
+
+}
+
+.specials .title span{
+color: #CDA45E;
+}
+
+
+.title p {
+  font-size: 3vh;
+}
+
+.title h2 {
+  font-size: 4vh;
+  color: #CDA45E;
+}
+
+.list {
+  display: flex;
+  gap: 3vh;
+  align-items: center;
+}
+
+.clmn {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.clmn a {
+  font-size: 2.5vh;
+  border-right: 2px solid #CDA45E;
+  color: white;
+  padding: 1.5vh;
+  text-decoration: none;
+}
+
+.clmn a:hover,
+.clmn a.active {
+  color: #CDA45E;
+  background-color: #1e1c18;
+}
+
+.gauche>div {
+  display: none;
+  flex-direction: row;
+  gap: 10vh;
+  width: 90%;
+  align-items: center;
+
+}
+
+.gauche>div.active {
+  display: flex;
+}
+
+.gauche h3 {
+  font-size: 4vh;
+  color: white;
+}
+
+
+.gauche p {
+  color: #999;
+  font-size: 3vh;
+  padding: 2vh;
+}
+
+.gauche img {
+  width: 25vw;
+  height: auto;
+  border-radius: 10px;
+}
+
+
+
+
+
 
 // menu-part
 

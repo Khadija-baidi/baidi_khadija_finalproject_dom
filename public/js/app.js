@@ -1,3 +1,59 @@
+// specials-part
+let modi = document.getElementById("modi")
+let unde = document.getElementById("unde")
+let pariatur = document.getElementById("pariatur")
+let nostrum = document.getElementById("nostrum")
+let lusti = document.getElementById("lusti")
+let choose= document.getElementById("sugg")
+let ChooseList = [
+   
+    document.getElementById("sugg1"),
+    document.getElementById("sugg2"),
+    document.getElementById("sugg3"),
+    document.getElementById("sugg4")
+];
+
+
+function hideAll() {
+    ChooseList.forEach(el => el.style.display = "none")
+}
+ choose.style.display = "flex"
+
+modi.addEventListener("click", (e) => {
+    e.preventDefault()
+    hideAll()
+    choose.style.display = "flex"
+});
+
+unde.addEventListener("click", (e) => {
+    e.preventDefault()
+    hideAll()
+    ChooseList[0].style.display = "flex"
+     choose.style.display = "none"
+});
+
+pariatur.addEventListener("click", (e) => {
+    e.preventDefault()
+    hideAll()
+    ChooseList[1].style.display = "flex"
+});
+
+nostrum.addEventListener("click", (e) => {
+    e.preventDefault()
+    hideAll()
+    ChooseList[2].style.display = "flex"
+});
+
+lusti.addEventListener("click", (e) => {
+    e.preventDefault()
+    hideAll()
+    ChooseList[3].style.display = "flex"
+});
+
+
+
+
+
 
 // menu
 
