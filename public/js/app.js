@@ -139,4 +139,60 @@ document.getElementById('reservation-form').addEventListener('submit', function 
 
 
 
-// contact 
+// carousel-events
+
+
+
+let nextBtns = document.querySelectorAll(".next-btn");
+let previousBtns = document.querySelectorAll(".previous-btn");
+let containers = document.querySelectorAll(".carousel-box");
+let carouselIndexes = new Map();
+
+// Manual buttons
+nextBtns.forEach(btn => {
+    btn.addEventListener("click", (e) => {
+        let target = e.target.getAttribute("carousel-target");
+        let targetID = carouselIndexes.get(target) || 0;
+        slider(targetID + 1, target);
+    });
+});
+
+previousBtns.forEach(btn => {
+    btn.addEventListener("click", (e) => {
+        let target = e.target.getAttribute("carousel-target");
+        let targetID = carouselIndexes.get(target) || 0;
+        slider(targetID - 1, target);
+    });
+});
+
+// Auto slide logic
+setInterval(() => {
+    containers.forEach(container => {
+        if (container.getAttribute("autoslide") === "true") {
+            let id = container.id;
+            let currentIndex = carouselIndexes.get(id) || 0;
+            slider(currentIndex + 1, id);
+        }
+    });
+}, 3000); // every 3 seconds
+
+// Slider function
+const slider = (index, target) => {
+    containers.forEach(container => {
+        if (container.id == target) {
+            let camera = container.querySelector(".carousel");
+            let slide = container.querySelectorAll(".slide");
+            let slideWidth = slide[0].clientWidth;
+
+            if (index < 0) {
+                index = slide.length - 1;
+            } else if (index >= slide.length) {
+                index = 0;
+            }
+
+            camera.style.transform = `translateX(-${slideWidth * index}px)`;
+            carouselIndexes.set(target, index);
+        }
+    });
+};
+

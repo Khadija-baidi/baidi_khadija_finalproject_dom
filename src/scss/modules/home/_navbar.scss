@@ -1,0 +1,237 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vh 15vh;
+    padding-bottom: 5vh;
+  }
+  .header .div {
+    display: flex;
+    gap: 5vh;
+  }
+  .header .div a {
+    color: #d0cecc;
+    position: absolute;
+    left: 5;
+    display: flex;
+    gap: 1vh;
+    text-align: center;
+  }
+  .header .div a svg {
+    color: #CDA45E;
+  }
+  .header .div a:hover {
+    color: #CDA45E;
+    text-decoration: underline 1px;
+  }
+  .header .div #numb {
+    display: flex;
+    gap: 1vh;
+    text-align: center;
+    position: absolute;
+    right: 150vh;
+    color: #d0cecc;
+  }
+  .header .div #numb svg {
+    color: #CDA45E;
+  }
+  .header .lang > p {
+    display: flex;
+    position: absolute;
+    font-size: 2vh;
+    padding-bottom: 1vh;
+    color: #CDA45E;
+  }
+  .header .lang > p span {
+    color: #d0cecc;
+  }
+  
+  .ag::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5647058824);
+    position: absolute;
+    transition: 1s;
+  }
+  
+  .bg {
+    background-image: url(../../../../public/images/restau/hero-bg.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .wlcm {
+    padding: 30vh 15vh;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .wlcm a {
+    color: #cda45e;
+  }
+  .wlcm a svg {
+    width: 10vh;
+    height: 10vh;
+  }
+  .wlcm a:hover {
+    color: white;
+  }
+  
+  .text {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+  }
+  .text h1 {
+    color: white;
+    font-size: 8vh;
+  }
+  .text h1 span {
+    color: #cda45e;
+  }
+  .text p {
+    font-size: 4vh;
+    color: white;
+  }
+  
+  .btn > button {
+    background-color: transparent;
+    color: white;
+    border: 2px solid #CDA45E;
+    border-radius: 15px;
+    padding: 1vh 5vh;
+  }
+  
+  .btn > button:hover {
+    background-color: #CDA45E;
+  }
+  
+  .bag {
+    // background-image: url(../../../../public/images/restau/hero-bg.jpg);
+    width: 100%;
+    background: #000;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+  }
+  
+  .bag::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5647058824);
+    position: absolute;
+    transition: 1s;
+  }
+  
+  .flex1 {
+    padding-inline: 10vh;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    color: white;
+    width: 50%;
+    padding-inline: 15vh;
+  }
+  .flex1 h2 {
+    font-size: 4vh;
+  }
+  .flex1 span {
+    color: grey;
+    width: 80%;
+  }
+  .flex1 div {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+  }
+  .flex1 div p {
+    width: 80%;
+    color: #d0cecc;
+  }
+  .flex1 div div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    padding-inline: 5vh;
+  }
+  .flex1 div div p {
+    display: flex;
+    align-items: center;
+    gap: 1vh;
+  }
+  .flex1 div div p span {
+    color: #d0cecc;
+  }
+  .flex1 div div p svg {
+    color: #CDA45E;
+  }
+  
+  .img > img {
+    right: 5vh;
+    top: 120vh;
+    border: 2px solid #d0cecc;
+    width: 40vw;
+    position: absolute;
+    transition: 0.5s;
+  }
+  
+  .img > img:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+  }
+  
+header {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.537254902);
+    padding: 3vh;
+    width: 100%;
+    align-items: center;
+    color: white;
+    position: fixed;
+    z-index: 100;
+  }
+  header nav {
+    display: flex;
+    gap: 3vh;
+  }
+  header nav a {
+    font-size: 2.5vh;
+    color: white;
+  }
+  header nav a:hover {
+    color: #CDA45E;
+  }
+  header label {
+    display: none;
+  }
+  header .btn1 > button {
+    background-color: transparent;
+    color: white;
+    border: 2px solid #CDA45E;
+    border-radius: 15px;
+    padding: 1vh 5vh;
+  }
+  header .btn1 > button:hover {
+    background-color: #CDA45E;
+  }
+  
+ 
