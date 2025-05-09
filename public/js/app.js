@@ -1,3 +1,36 @@
+// header
+var modal = document.getElementById("modal");
+
+
+var btn = document.getElementById("butt");
+
+
+var span = document.getElementsByClassName("exit")[0];
+
+btn.onclick = function() {
+  modal.style.display = "block";
+  document.body.style.overflow="hidden"
+}
+
+
+// video
+let svg1 = document.getElementById("svg1");
+let close = document.getElementById("close");
+let ffllex = document.getElementById("video");
+
+
+svg1.addEventListener("click", (e) => {
+    e.preventDefault(); 
+    video.style.display = "block"; 
+    body.style.overflow = "hidden"; 
+});
+
+close.addEventListener("click", () => {
+    video.style.display = "none"; 
+    body.style.overflow = "auto"; 
+});
+
+
 // specials-part
 let modi = document.getElementById("modi")
 let unde = document.getElementById("unde")

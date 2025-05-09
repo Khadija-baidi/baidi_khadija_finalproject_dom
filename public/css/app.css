@@ -128,6 +128,11 @@ footer .bottom p {
   color: #d0cecc;
 }
 
+#nav a {
+  text-decoration: none;
+  font-size: small;
+}
+
 .ag::before {
   content: "";
   width: 100%;
@@ -326,6 +331,84 @@ header .btn1 > button {
 
 header .btn1 > button:hover {
   background-color: #CDA45E;
+}
+
+.modal1 {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  z-index: 100000000000000;
+}
+
+.formulaire {
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+  align-items: center;
+}
+
+.modalbox {
+  background-color: #000;
+  margin-inline: 55vh auto !important;
+  padding: 20px;
+  border: 1px solid #CDA45E;
+  width: 50%;
+}
+
+.third button {
+  background: #CDA45E;
+  color: white;
+  border: 2px solid #CDA45E;
+  border-radius: 15px;
+  padding: 1vh 5vh;
+}
+
+.exit {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.exit:hover,
+.exit:focus {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn3 > button {
+  background-color: transparent;
+  color: white;
+  border: 2px solid #CDA45E;
+  border-radius: 15px;
+  padding: 1vh 5vh;
+}
+
+.btn3 > button:hover {
+  background-color: #CDA45E;
+}
+
+.second label {
+  color: white;
+}
+
+.second {
+  display: flex;
+  gap: 2vh;
+}
+
+.second > input {
+  background-color: #000;
+  border: 2px solid #CDA45E;
+  width: 90%;
 }
 
 .voluptatem {
