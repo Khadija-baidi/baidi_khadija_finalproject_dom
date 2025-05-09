@@ -229,3 +229,34 @@ const slider = (index, target) => {
     });
 };
 
+// testimonials
+let currentcaro = 0;
+let slides2 = document.querySelectorAll('.testimonial-card');
+let slidesToShow = 3;
+
+function showSlides(startIndex) {
+   slides2.forEach((slide, i) => {
+      slide.style.display = (i >= startIndex && i < startIndex + slidesToShow) ? 'block' : 'none';
+   });
+}
+
+document.getElementById('nextBtn').addEventListener('click', () => {
+   currentcaro = (currentcaro + 1) % slides2.length;
+   if (currentcaro + slidesToShow > slides2.length) currentcaro = 0;
+   showSlides(currentcaro);
+});
+
+document.getElementById('prevBtn').addEventListener('click', () => {
+   currentcaro = (currentcaro - 1 + slides2.length) % slides2.length;
+   if (currentcaro < 0) currentcaro = slides2.length - slidesToShow;
+   showSlides(currentcaro);
+});
+
+setInterval(() => {
+   currentcaro = (currentcaro + 1) % slides2.length;
+   if (currentcaro + slidesToShow > slides2.length) currentcaro = 0;
+   showSlides(currentcaro);
+}, 3000);
+
+
+showSlides(currentcaro);
