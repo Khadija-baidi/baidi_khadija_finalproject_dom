@@ -1,5 +1,71 @@
 @charset "UTF-8";
 @import '../../node_modules/bootstrap-icons/font/bootstrap-icons.css';
+footer {
+  padding: 3rem;
+  background-color: black;
+}
+footer span {
+  color: gray;
+}
+footer svg {
+  color: gray;
+}
+footer h4, footer .h4 {
+  color: white;
+}
+footer .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .footer .horizontal {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+footer .footer .icons {
+  display: flex;
+  gap: 15px;
+  padding: 10px;
+}
+footer .footer .icons svg {
+  border: solid grey 1px;
+  border-radius: 50%;
+}
+footer .Newsletter {
+  padding: 2rem;
+}
+footer .input {
+  padding: 2rem;
+}
+footer .input input {
+  background-color: black;
+  border: #cda45e solid 1px;
+  width: 30rem !important;
+  padding: 0.5rem;
+}
+footer .input button {
+  padding: 0.5rem;
+  background-color: #cda45e;
+  border: none;
+  color: white;
+}
+footer .bottom {
+  border-top: 1px solid gray;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+footer .bottom .pad {
+  padding: 2rem;
+}
+footer .bottom span {
+  color: #cda45e;
+}
+footer .bottom p {
+  color: gray;
+}
+
 * {
   margin: 0;
   padding: 0;
