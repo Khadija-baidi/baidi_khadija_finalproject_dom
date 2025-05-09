@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import '../../node_modules/bootstrap-icons/font/bootstrap-icons.css';
 .voluptatem {
   background-image: url(../../../../public/images/restau/about-bg.jpg);
   background-size: cover;
@@ -363,6 +364,72 @@
   transition: 0.3s;
 }
 .reservation .flex button:hover {
+  background-color: #CDA45E;
+  color: #000;
+}
+
+.gr {
+  color: gray;
+}
+
+.dh {
+  color: #CDA45E;
+}
+
+#contact {
+  background-color: #191815;
+}
+#contact .title p {
+  font-size: 3vh;
+  color: #999;
+}
+#contact .title p > span {
+  color: #CDA45E;
+}
+#contact .title h2, #contact .title .h2 {
+  color: #CDA45E;
+}
+#contact h2, #contact .h2 {
+  font-size: 2rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+#contact .col-lg-4 {
+  gap: 10px !important;
+  align-items: center;
+}
+#contact i {
+  gap: 15px;
+  background-color: #CDA45E;
+  padding: 0.5rem;
+  width: 3vw;
+  border-radius: 5px;
+  text-align: center;
+  height: 6vh;
+}
+#contact .div {
+  color: white;
+  padding: 0.25rem;
+}
+#contact .div p {
+  color: #999;
+}
+#contact input,
+#contact textarea {
+  background-color: #191815;
+  border: 1px solid #CDA45E;
+  outline: #CDA45E;
+}
+#contact button {
+  background: transparent;
+  color: white;
+  padding: 0.75rem 2rem;
+  border-radius: 25px;
+  border: 1px solid #CDA45E;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#contact button:hover {
   background-color: #CDA45E;
   color: #000;
 }
